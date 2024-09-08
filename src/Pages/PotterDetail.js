@@ -1,14 +1,13 @@
 import React from 'react';
+import ResponsiveAppBar from '../Components/Navbar';
 import { useParams } from 'react-router-dom';
-import Typography from '@mui/joy/Typography';
-import Box from '@mui/joy/Box';
+import { Typography, Box, Container } from '@mui/material';
 import ImageList from '../Components/ImageList';
 
 const LocationDetailPage = () => {
   const { title } = useParams();
   
-  // In a real application, you would fetch the location details based on the title
-  // For this example, we'll use mock data
+  // Mock data for location details
   const locationDetails = {
     "Pak_Jamadi": {
       fullName: "Pak Jamadi",
@@ -31,14 +30,32 @@ const LocationDetailPage = () => {
 
   return (
     <>
-      <Box sx={{ maxWidth: '800px', margin: 'auto', padding: 4 }}>
-        <Typography level="h1" gutterBottom>{location.fullName}</Typography>
-        <img src={location.imageUrl} alt={location.fullName} style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }} />
-        <Typography level="body1" sx={{ marginTop: 2 }}>{location.description}</Typography>
-      </Box>
-      <Box sx={{ width: '100%', margin: '0 auto', padding: '0 16px', marginTop: 4 }}>
-        <ImageList />
-      </Box>
+      <ResponsiveAppBar />
+      <Container maxWidth="md" sx={{ mt: 20, mb: 4 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Box
+            component="img"
+            src={location.imageUrl}
+            alt={location.fullName}
+            sx={{
+              width: '100%',
+              maxHeight: '100%',
+              objectFit: 'cover',
+              borderRadius: 2,
+              mb: 2
+            }}
+          />
+          <Typography variant="h3" component="h1" gutterBottom align="center">
+            {location.fullName}
+          </Typography>
+          <Typography variant="body1" align="center" sx={{ mb: 4 }}>
+            {location.description}
+          </Typography>
+        </Box>
+        <Box sx={{ mt: 4 }}>
+          <ImageList />
+        </Box>
+      </Container>
     </>
   );
 };

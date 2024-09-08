@@ -11,12 +11,11 @@ export default function CardGrid() {
     <Grid
       container
       spacing={5}
-      columns={4}
       justifyContent="center"
-      alignItems="ce5nter"
+      alignItems="center"
     >
-      {Array.from({ length: 10 }).map((_, index) => (
-        <Grid item xs={1} key={index}>
+      {Array.from({ length: 4 }).map((_, index) => (
+        <Grid item xs={12} sm={6} md={3} key={index}>
           <Card sx={{ maxWidth: '350px', margin: 'auto', marginBottom: '10px'}}>
             <CardActionArea>
               <CardMedia
