@@ -22,7 +22,8 @@ const LocationDetailPage = () => {
     "Pak_Simone": {
       fullName: "Pak Simone",
       description: "A senior craftsman specializing in Indonesian palm sugar production.",
-      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE="
+      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
+      shop:[]
     }
   };
 
@@ -52,10 +53,10 @@ const LocationDetailPage = () => {
             {location.description}
           </Typography>
         </Box>
+        </Container>
         <Box sx={{ mt: 4 }}>
           <ImageList />
         </Box>
-      </Container>
     </>
   );
 };
