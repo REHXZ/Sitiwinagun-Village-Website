@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Potters from '../Components/Potters';
-import MultiActionAreaCard from '../Components/VillageProducts';
+import ImageMasonry from '../Components/VillageProducts';
 // Global styles for the Lora font
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
@@ -114,7 +114,16 @@ function LandingPage() {
             </Typography>
           </Stack>
         </Container>
-        <MultiActionAreaCard/>
+        <Container
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',  // Center the ImageMasonry horizontally
+            alignItems: 'center',      // Center the ImageMasonry vertically if necessary
+            flexDirection: 'column',   // Keep the content in a column layout
+            pt: { xs: 14, sm: 20 },
+            pb: { xs: 2, sm: 4 }}}>
+          <ImageMasonry />
+        </Container>
       </main>
     </div>
   );

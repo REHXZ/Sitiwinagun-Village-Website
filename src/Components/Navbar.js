@@ -45,7 +45,7 @@ export default function AppAppBar() {
   };
 
   const navItems = [
-    { label: 'Our Potters', href: '#potter' },
+    { label: 'Our Potters', href: '#potters' },
     { label: 'Our Products', href: '#products' },
     { label: 'Our Village', href: '#village' },
     { label: 'Our Passion', href: '#passion' },
