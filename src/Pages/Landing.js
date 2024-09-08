@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Potters from '../Components/Potters';
-
+import MultiActionAreaCard from '../Components/VillageProducts';
 // Global styles for the Lora font
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
@@ -49,16 +49,17 @@ function LandingPage() {
             >
               Our&nbsp;
               <Typography
+                id="potters"
                 component="span"
                 variant="h1"
                 sx={(theme) => ({
                   fontSize: 'inherit',
                   color: 'primary.main',
                   fontFamily: '"Lora", serif',  // Apply the Lora font to the span
-                  ...theme.applyStyles('dark', {
-                    color: 'primary.light',
-                  }),
-                })}
+                  background: 'linear-gradient(90deg, #004962, #4dd2ff)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                      })}
               >
                 Potters
               </Typography>
@@ -66,6 +67,54 @@ function LandingPage() {
           </Stack>
         </Container>
         <Potters/>
+        <Container
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            pt: { xs: 14, sm: 20 },
+            pb: { xs: 2, sm: 4 },  // Adjusted padding below
+            '&::before': {
+              content: `"${globalStyles}"`,
+              display: 'none',
+            },
+          }}
+        >
+          <Stack
+            spacing={2}
+            useFlexGap
+            sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
+          >
+            <Typography
+              variant="h1"
+              sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', sm: 'row' },
+                alignItems: 'center',
+                fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+                fontFamily: '"Lora", serif',  // Apply the Lora font
+              }}
+            >
+              Our&nbsp;
+              <Typography
+                id="potters"
+                component="span"
+                variant="h1"
+                sx={(theme) => ({
+                  fontSize: 'inherit',
+                  color: 'primary.main',
+                  fontFamily: '"Lora", serif',  // Apply the Lora font to the span
+                  background: 'linear-gradient(90deg, #004962, #4dd2ff)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                      })}
+              >
+                Products
+              </Typography>
+            </Typography>
+          </Stack>
+        </Container>
+        <MultiActionAreaCard/>
       </main>
     </div>
   );

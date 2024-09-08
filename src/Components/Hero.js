@@ -87,10 +87,11 @@ export default function Hero() {
               sx={(theme) => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
-                fontFamily: '"Lora", serif',  // Apply the Lora font to the span
-                ...theme.applyStyles('dark', {
-                  color: 'primary.light',
-                }),
+                fontFamily: '"Lora", serif',
+                background: 'linear-gradient(90deg, #004962, #4dd2ff)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+    
               })}
             >
               Village

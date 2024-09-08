@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import Sitemark from './SitemarIcon';
+import Typography from '@mui/material/Typography';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -27,6 +27,16 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   padding: '8px 12px',
 }));
 
+const NavButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.text.primary,
+  fontWeight: 600,
+  fontSize: '0.875rem',
+  textTransform: 'none',
+  '&:hover': {
+    backgroundColor: alpha(theme.palette.primary.main, 0.1),
+  },
+}));
+
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
 
@@ -34,29 +44,35 @@ export default function AppAppBar() {
     setOpen(newOpen);
   };
 
+  const navItems = [
+    { label: 'Our Potters', href: '#potter' },
+    { label: 'Our Products', href: '#products' },
+    { label: 'Our Village', href: '#village' },
+    { label: 'Our Passion', href: '#passion' },
+  ];
+
   return (
     <AppBar
       position="fixed"
-      sx={{ boxShadow: 0, bgcolor: 'transparent', backgroundImage: 'none', mt: 6 }}
-    >
+      sx={{ boxShadow: 0, bgcolor: 'transparent', backgroundImage: 'none', mt: 6 }}>
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
-          <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
-            <Sitemark />
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small">
-                Our Potters
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Our Products
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Our Village
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Our Passion
-              </Button>
-            </Box>
+        <NavButton
+          href=""
+          sx={{
+            fontSize: '20px',
+            background: 'linear-gradient(90deg, #004962, #4dd2ff)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+          }}>
+          Sitiwinangun The Pottery Village
+        </NavButton>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'right' }}>
+            {navItems.map((item) => (
+              <NavButton key={item.label} href={item.href}>
+                {item.label}
+              </NavButton>
+            ))}
           </Box>
           <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
@@ -76,12 +92,11 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                {navItems.map((item) => (
+                  <MenuItem key={item.label} component="a" href={item.href}>
+                    <Typography variant="subtitle1">{item.label}</Typography>
+                  </MenuItem>
+                ))}
               </Box>
             </Drawer>
           </Box>

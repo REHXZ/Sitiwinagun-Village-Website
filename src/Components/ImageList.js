@@ -50,14 +50,6 @@ export default function CardGrid() {
                 image={Product.imageUrl[index]}
                 alt={name}
               />
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  {name}
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  {Product.description[index]}
-                </Typography>
-              </CardContent>
             </CardActionArea>
           </Card>
         </Grid>
