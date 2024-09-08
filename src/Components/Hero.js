@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
 import { styled } from '@mui/material/styles';
 
+// StyledBox with updated properties
 const StyledBox = styled('div')(({ theme }) => ({
   alignSelf: 'center',
   width: '100%',
@@ -17,7 +17,7 @@ const StyledBox = styled('div')(({ theme }) => ({
   border: '1px solid',
   borderColor: theme.palette.grey[200],
   boxShadow: '0 0 12px 8px hsla(220, 25%, 80%, 0.2)',
-  backgroundImage: `url(${'/static/screenshots/material-ui/getting-started/templates/dashboard.jpg'})`,
+  backgroundImage: `url('/static/screenshots/material-ui/getting-started/templates/dashboard.jpg')`,
   backgroundSize: 'cover',
   [theme.breakpoints.up('sm')]: {
     marginTop: theme.spacing(10),
@@ -25,11 +25,16 @@ const StyledBox = styled('div')(({ theme }) => ({
   },
   ...theme.applyStyles('dark', {
     boxShadow: '0 0 24px 12px hsla(210, 100%, 25%, 0.2)',
-    backgroundImage: `url(${'/static/screenshots/material-ui/getting-started/templates/dashboard-dark.jpg'})`,
+    backgroundImage: `url('/static/screenshots/material-ui/getting-started/templates/dashboard-dark.jpg')`,
     outlineColor: 'hsla(220, 20%, 42%, 0.1)',
     borderColor: theme.palette.grey[700],
   }),
 }));
+
+// Global styles for the Lora font
+const globalStyles = `
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+`;
 
 export default function Hero() {
   return (
@@ -53,7 +58,11 @@ export default function Hero() {
           flexDirection: 'column',
           alignItems: 'center',
           pt: { xs: 14, sm: 20 },
-          pb: { xs: 8, sm: 12 },
+          pb: { xs: 2, sm: 4 },  // Adjusted padding below
+          '&::before': {
+            content: `"${globalStyles}"`,
+            display: 'none',
+          },
         }}
       >
         <Stack
@@ -68,6 +77,7 @@ export default function Hero() {
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+              fontFamily: '"Lora", serif',  // Apply the Lora font
             }}
           >
             Sitiwinangun&nbsp;
@@ -77,6 +87,7 @@ export default function Hero() {
               sx={(theme) => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
+                fontFamily: '"Lora", serif',  // Apply the Lora font to the span
                 ...theme.applyStyles('dark', {
                   color: 'primary.light',
                 }),
@@ -91,12 +102,13 @@ export default function Hero() {
               color: 'text.secondary',
               variant: 'h3',
               width: { sm: '100%', md: '80%' },
+              fontFamily: '"Lora", serif',  // Apply the Lora font to the description
             }}
           >
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </Typography>
         </Stack>
       </Container>
     </Box>
