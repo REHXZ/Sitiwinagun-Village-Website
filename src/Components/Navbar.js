@@ -45,10 +45,9 @@ export default function AppAppBar() {
   };
 
   const navItems = [
+    { label: 'Our Village', href: '/' },
     { label: 'Our Potters', href: '/#potters' },
     { label: 'Our Products', href: '/#products' },
-    { label: 'Our Village', href: '#village' },
-    { label: 'Our Passion', href: '#passion' },
   ];
 
   return (
@@ -58,7 +57,7 @@ export default function AppAppBar() {
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
         <NavButton
-          href=""
+          href="/"
           sx={{
             fontSize: '20px',
             background: 'linear-gradient(90deg, #004962, #4dd2ff)',
