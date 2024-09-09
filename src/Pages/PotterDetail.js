@@ -60,7 +60,7 @@ const LocationDetailPage = () => {
             src={location.imageUrl}
             alt={location.fullName}
             sx={{
-              width: '100%',
+              width: '70%',
               maxHeight: '100%',
               objectFit: 'cover',
               borderRadius: 2,
