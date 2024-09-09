@@ -4,7 +4,7 @@
   import { styled } from '@mui/material/styles';
   import { Typography, useMediaQuery, useTheme, Modal, Fade, Backdrop } from '@mui/material';
   import Button from '@mui/material/Button';
-  import DIYKIT from '../Images/WhatsApp Image 2024-09-09 at 10.45.53_dca67895.jpg';  
+  import DIYKIT from '../Images/NEW4.png';  
   const StyledMasonry = styled(Masonry)(({ theme }) => ({
     margin: 0,
   }));
@@ -143,7 +143,7 @@
                 style={{
                   display: 'block',
                   width: '100%',
-                  height: 'auto',
+                  height: 'auto'
                 }}
               />
               <PriceOverlay className="price-overlay">
