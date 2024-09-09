@@ -65,7 +65,7 @@ export default function AppAppBar() {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
           }}>
-          Sitiwinangun The Pottery Village
+          Sitiwinangun
         </NavButton>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'right' }}>
             {navItems.map((item) => (

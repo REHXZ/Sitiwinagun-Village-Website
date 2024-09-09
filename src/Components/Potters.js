@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
@@ -6,6 +6,9 @@ import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import Grid from '@mui/joy/Grid';
 import Box from '@mui/joy/Box';
+
+// Import the local image
+import arkimaImage from '../Images/WhatsApp Image 2024-09-08 at 15.26.54_44ddd897.jpg';
 
 const LocationCard = ({ title, imageUrl }) => {
   const navigate = useNavigate();
@@ -55,7 +58,7 @@ const LocationCard = ({ title, imageUrl }) => {
 const LocationCardGrid = () => {
   const locations = [
     { title: "Pak Nurjaji", imageUrl: "https://media.istockphoto.com/id/1090026394/id/foto/pemuda-pribumi-ukiran-masker-kayu-di-bali-indonesia.jpg?s=612x612&w=0&k=20&c=DuhZrm27LZcUjqglWE6n2cwWaJxqJRxufwDEg7Mi-7Y=" },
-    { title: "Pak Arkima", imageUrl: "./src/Images/WhatsApp Image 2024-09-08 at 15.26.54_44ddd897.jpg"},
+    { title: "Pak Arkima", imageUrl: arkimaImage }, // Use the imported image
     { title: "Pak Utama", imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=" },
     { title: "Pak Rum", imageUrl: "https://media.istockphoto.com/id/1090026394/id/foto/pemuda-pribumi-ukiran-masker-kayu-di-bali-indonesia.jpg?s=612x612&w=0&k=20&c=DuhZrm27LZcUjqglWE6n2cwWaJxqJRxufwDEg7Mi-7Y=" },
     { title: "Pak Yandi", imageUrl: "https://media.istockphoto.com/id/173949501/id/foto/malaysia-bekerja-dengan-alat-dan-aktivitas-bangunan.jpg?s=612x612&w=0&k=20&c=kEERH0xD1qek6LLLKpVaiUYWyakPSBbAjb_LRbvUEo0=" },

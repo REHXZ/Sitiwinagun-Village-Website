@@ -4,10 +4,12 @@ import { useParams } from 'react-router-dom';
 import { Typography, Box, Container } from '@mui/material';
 import ImageList from '../Components/ImageList';
 import Stack from '@mui/material/Stack';
-
+import arkimaImage from '../Images/WhatsApp Image 2024-09-08 at 15.26.54_44ddd897.jpg';
+import ImageMasonry from '../Components/IndividualProduct';  
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 `;
+
 
 const LocationDetailPage = () => {
   const { title } = useParams();
@@ -21,8 +23,8 @@ const LocationDetailPage = () => {
     },
     "Pak_Arkima": {
       fullName: "Pak Arkima",
-      description: "I AM HIM!",
-      imageUrl: "https://media.istockphoto.com/id/173949501/id/foto/malaysia-bekerja-dengan-alat-dan-aktivitas-bangunan.jpg?s=612x612&w=0&k=20&c=kEERH0xD1qek6LLLKpVaiUYWyakPSBbAjb_LRbvUEo0="
+      description: "A summary about Pak Arkima.",
+      imageUrl: arkimaImage
     },
     "Pak_Utama": {
       fullName: "Pak Utama",
@@ -65,10 +67,20 @@ const LocationDetailPage = () => {
               mb: 2
             }}
           />
-          <Typography variant="h1" gutterBottom align="center" sx={{fontFamily: '"Lora", serif'}}>
-            {location.fullName}
-          </Typography>
-          <Typography variant="body1" align="center" sx={{fontFamily: '"Lora", serif'}}>
+        <Typography
+          variant="h1"
+          sx={(theme) => ({
+            fontSize: '4rem',  // Adjust this to your desired size
+            fontWeight:'bold',
+            fontFamily: '"Lora", serif',
+            background: 'linear-gradient(90deg, #004962, #4dd2ff)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+          })}
+        >
+          {location.fullName}
+        </Typography>
+          <Typography mt={4} variant="h5" align="center" sx={{fontFamily: '"Lora", serif'}}>
             {location.description}
           </Typography>
         </Box>
@@ -168,6 +180,7 @@ const LocationDetailPage = () => {
             </Typography>
           </Stack>
         </Container>
+        <ImageMasonry/>
 
     </>
   );

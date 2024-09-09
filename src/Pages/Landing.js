@@ -17,6 +17,7 @@ function LandingPage() {
     <div>
       <main>
         <ResponsiveAppBar/>
+        
         <Hero />
         <Products/>
         <Container
@@ -124,57 +125,6 @@ function LandingPage() {
             pt: { xs: 14, sm: 20 },
             pb: { xs: 2, sm: 4 }}}>
           <ImageMasonry />
-        </Container>
-        <Container
-          id="products"
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            pt: { xs: 14, sm: 20 },
-            pb: { xs: 2, sm: 4 },  // Adjusted padding below
-            '&::before': {
-              content: `"${globalStyles}"`,
-              display: 'none',
-            },
-          }}
-        >
-          <Stack
-            spacing={2}
-            useFlexGap
-            sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
-          >
-            <Typography
-              variant="h1"
-              sx={{
-                display: 'flex',
-                flexDirection: { xs: 'column', sm: 'row' },
-                alignItems: 'center',
-                fontSize: 'clamp(3rem, 10vw, 3.5rem)',
-                fontFamily: '"Lora", serif',  // Apply the Lora font
-              }}
-            >
-              About&nbsp;
-              <Typography
-                id="potters"
-                component="span"
-                variant="h1"
-                sx={(theme) => ({
-                  fontSize: 'inherit',
-                  color: 'primary.main',
-                  fontFamily: '"Lora", serif',  // Apply the Lora font to the span
-                  background: 'linear-gradient(90deg, #004962, #4dd2ff)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                      })}
-              >
-                Our Village
-              </Typography>
-            </Typography>
-          </Stack>
-        </Container>
-        <Container>
-          <Typography variant='h5'>some thingy</Typography>
         </Container>
       </main>
     </div>

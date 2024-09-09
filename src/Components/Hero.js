@@ -97,19 +97,9 @@ export default function Hero() {
               Village
             </Typography>
           </Typography>
-          <Typography
-            sx={{
-              textAlign: 'center',
-              color: 'text.secondary',
-              variant: 'h3',
-              width: { sm: '100%', md: '80%' },
-              fontFamily: '"Lora", serif',  // Apply the Lora font to the description
-            }}
-          >
-            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. */}
-          </Typography>
+        <Container>
+          <Typography variant='h5' mb={0} sx={{textAlign:'center', fontFamily: '"Lora", serif',}}>Sitiwinangun is a ceramic village located in Cirebon. It has been proclaimed as a tourism village since 2018 by the Sultan of Cirebon. Since then, the visit to this village keeps increasing. Some of the traditional ceramic sculptures from this ceramic centre are statues of Paksinagaliman, Singabarong, Macan Ali, Burok, Jatayu, Garuda Mungkur and Gajah Mungkur.The study is an art-based research focusing on developing the traditional ceramic sculptures into modern ceramic products. The method applied is ATUMICS that is regarding Artefact, Technic, Utility, Material, Icon, Concept, Shape. The process is through some phases, they are identification, analysis, design development, design application, mock up creation and, product exhibition. The result produces ceramic sculptures into various forms and functions adjusted to the consumers needs.</Typography>
+        </Container>
         </Stack>
       </Container>
     </Box>
