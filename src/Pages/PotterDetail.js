@@ -14,21 +14,35 @@ const LocationDetailPage = () => {
   
   // Mock data for location details
   const locationDetails = {
-    "Pak_Jamadi": {
-      fullName: "Pak Jamadi",
+    "Pak_Nurjaji": {
+      fullName: "Pak Nurjaji",
       description: "An expert wood carver from Bali, Indonesia.",
       imageUrl: "https://media.istockphoto.com/id/1090026394/id/foto/pemuda-pribumi-ukiran-masker-kayu-di-bali-indonesia.jpg?s=612x612&w=0&k=20&c=DuhZrm27LZcUjqglWE6n2cwWaJxqJRxufwDEg7Mi-7Y="
     },
-    "Pak_Jamal": {
-      fullName: "Pak Jamal",
+    "Pak_Arkima": {
+      fullName: "Pak Arkima",
       description: "I AM HIM!",
       imageUrl: "https://media.istockphoto.com/id/173949501/id/foto/malaysia-bekerja-dengan-alat-dan-aktivitas-bangunan.jpg?s=612x612&w=0&k=20&c=kEERH0xD1qek6LLLKpVaiUYWyakPSBbAjb_LRbvUEo0="
     },
-    "Pak_Simone": {
-      fullName: "Pak Simone",
+    "Pak_Utama": {
+      fullName: "Pak Utama",
       description: "A senior craftsman specializing in Indonesian palm sugar production.",
       imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
-      shop:[]
+    },
+    "Pak_Rum": {
+      fullName: "Pak Rum",
+      description: "A senior craftsman specializing in Indonesian palm sugar production.",
+      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
+    },
+    "Pak_Yandi": {
+      fullName: "Pak Yandi",
+      description: "A senior craftsman specializing in Indonesian palm sugar production.",
+      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
+    },
+    "Pak_Kadmiya": {
+      fullName: "Pak Kadmiya",
+      description: "A senior craftsman specializing in Indonesian palm sugar production.",
+      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
     }
   };
 
@@ -87,7 +101,7 @@ const LocationDetailPage = () => {
                 fontFamily: '"Lora", serif',  // Apply the Lora font
               }}
             >
-            {location.fullName}&nbsp;
+            {location.fullName}'s&nbsp;
               <Typography
                 component="span"
                 variant="h3"
@@ -108,6 +122,53 @@ const LocationDetailPage = () => {
         <Box sx={{ mt: 4 }}>
           <ImageList />
         </Box>
+        <Container
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            pt: { xs: 14, sm: 10 },
+            pb: { xs: 2, sm: 4 },  // Adjusted padding below
+            '&::before': {
+              content: `"${globalStyles}"`,
+              display: 'none',
+            },
+          }}
+        >
+          <Stack
+            spacing={2}
+            useFlexGap
+            sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
+          >
+            <Typography
+              variant="h3"
+              sx={{
+                display: 'flex',
+                flexDirection: { xs: 'column', sm: 'row' },
+                alignItems: 'center',
+                fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+                fontFamily: '"Lora", serif',  // Apply the Lora font
+              }}
+            >
+            {location.fullName}'s&nbsp;
+              <Typography
+                component="span"
+                variant="h3"
+                sx={(theme) => ({
+                  fontSize: 'inherit',
+                  color: 'primary.main',
+                  fontFamily: '"Lora", serif',  // Apply the Lora font to the span
+                  background: 'linear-gradient(90deg, #004962, #4dd2ff)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                      })}
+              >
+                Shop
+              </Typography>
+            </Typography>
+          </Stack>
+        </Container>
+
     </>
   );
 };

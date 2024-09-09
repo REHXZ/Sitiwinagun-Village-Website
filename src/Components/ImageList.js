@@ -11,25 +11,43 @@ export default function CardGrid() {
   const { title } = useParams();
 
   const Product_Information = {
-    "Pak_Jamadi": {
-      fullName: "Pak Jamadi",
+    "Pak_Nurjaji": {
+      fullName: "Pak Nurjaji",
       Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
       description: ['Made with ...', 'Something something', 'Something something'],
       imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
     },
-    "Pak_Jamal": {
-      fullName: "Pak Jamal",
+    "Pak_Arkima": {
+      fullName: "Pak Arkima",
       Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug','Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
       description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],
       imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
     },
-    "Pak_Simone": {
-      fullName: "Pak Simone",
+    "Pak_Utama": {
+      fullName: "Pak Utama",
+      Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug','Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
+      description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],
+      imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
+    },
+    "Pak_Rum": {
+      fullName: "Pak Rum",
+      Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
+      description: ['Made with ...', 'Something something', 'Something something'],
+      imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
+    },
+    "Pak_Yandi": {
+      fullName: "Pak Yandi",
+      Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug','Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
+      description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],
+      imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
+    },
+    "Pak_Kadmiya": {
+      fullName: "Pak Kadmiya",  
       Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug','Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
       description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],
       imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
     }
-  };
+};
 
   const Product = Product_Information[title] || { fullName: "Unknown", Name: [], description: [], imageUrl: [] };
 
