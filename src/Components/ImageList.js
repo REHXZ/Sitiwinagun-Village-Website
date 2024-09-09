@@ -54,17 +54,17 @@ export default function CardGrid() {
   return (
     <Grid
       container
-      spacing={5}
+      spacing={2}
       justifyContent="center"
       alignItems="center"
     >
       {Product.Name.map((name, index) => (
         <Grid item xs={12} sm={6} md={3} key={index}>
-          <Card sx={{ maxWidth: '350px', margin: 'auto', marginBottom: '10px'}}>
+          <Card sx={{ maxWidth: '300px', margin: 'auto', marginBottom: '10px'}}>
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="250"
+                height="200"
                 image={Product.imageUrl[index]}
                 alt={name}
               />

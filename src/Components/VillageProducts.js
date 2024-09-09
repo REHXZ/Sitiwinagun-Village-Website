@@ -4,6 +4,7 @@
   import { styled } from '@mui/material/styles';
   import { Typography, useMediaQuery, useTheme, Modal, Fade, Backdrop } from '@mui/material';
   import Button from '@mui/material/Button';
+  import DIYKIT from '../Images/WhatsApp Image 2024-09-09 at 10.45.53_dca67895.jpg';  
   const StyledMasonry = styled(Masonry)(({ theme }) => ({
     margin: 0,
   }));
@@ -47,10 +48,10 @@
 
   const itemData = [
     {
-      img: 'https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3',
-      title: 'Ceirbon Pot',
-      description: 'A beautifully handcrafted pot from Ceirbon, featuring traditional designs and vibrant colors, perfect for adding a touch of culture to any space.',
-      price: 250400
+      img: DIYKIT,
+      title: 'DIY KIT',
+      description: 'A DIY kit people can use at home.',
+      price: 'DIY Kit'
     },
     {
       img: 'https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp',
