@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Potters from '../Components/Potters';
 import ImageMasonry from '../Components/VillageProducts';
+import VirtualTour from '../Components/VirtualTour'
 // Global styles for the Lora font
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
@@ -126,6 +127,7 @@ function LandingPage() {
             pb: { xs: 2, sm: 4 }}}>
           <ImageMasonry />
         </Container>
+        <VirtualTour/>
       </main>
     </div>
   );
