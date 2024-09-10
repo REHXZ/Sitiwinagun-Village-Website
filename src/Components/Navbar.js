@@ -7,11 +7,13 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
+import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Typography from '@mui/material/Typography';
+import { label } from 'framer-motion/client';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -39,15 +41,37 @@ const NavButton = styled(Button)(({ theme }) => ({
 
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
 
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
   const navItems = [
     { label: 'Our Village', href: '/' },
-    { label: 'Our Potters', href: '/#potters' },
+    { 
+      label: 'Our Potters', 
+      href: '/#potters', 
+      subItems: [
+        { label: 'Pak Nurjaji', href: '/Pak_Nurjaji' },
+        { label: 'Pak Arkima', href: '/Pak_Arkima' },
+        { label: 'Pak Utama', href: '/Pak_Utama' },
+        { label: 'Pak Rum', href: '/Pak_Rum' },
+        { label: 'Pak Yandi', href: '/Pak_Yandi' },
+        { label: 'Pak Kadmiya', href: '/Pak_Kadmiya' },
+      ],
+    },
     { label: 'Our Products', href: '/#products' },
+    {label: 'Village Tour', href: '/#tour'},
+
   ];
 
   return (
@@ -56,21 +80,53 @@ export default function AppAppBar() {
       sx={{ boxShadow: 0, bgcolor: 'transparent', backgroundImage: 'none', mt: 6 }}>
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
-        <NavButton
-          href="/"
-          sx={{
-            fontSize: '20px',
-            background: 'linear-gradient(90deg, #004962, #4dd2ff)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-          }}>
-          Sitiwinangun
-        </NavButton>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'right' }}>
+          <NavButton
+            href="/"
+            sx={{
+              fontSize: '20px',
+              background: 'linear-gradient(90deg, #004962, #4dd2ff)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}>
+            Sitiwinangun
+          </NavButton>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'right' }}>
             {navItems.map((item) => (
-              <NavButton key={item.label} href={item.href}>
-                {item.label}
-              </NavButton>
+              item.subItems ? (
+                <div key={item.label}>
+                  <NavButton
+                    aria-controls="potters-menu"
+                    aria-haspopup="true"
+                    onClick={handleMenuClick}
+                  >
+                    {item.label}
+                  </NavButton>
+                  <Menu
+                    id="potters-menu"
+                    anchorEl={anchorEl}
+                    open={Boolean(anchorEl)}
+                    onClose={handleMenuClose}
+                    MenuListProps={{
+                      'aria-labelledby': 'potters-button',
+                    }}
+                  >
+                    {item.subItems.map((subItem) => (
+                      <MenuItem
+                        key={subItem.label}
+                        component="a"
+                        href={subItem.href}
+                        onClick={handleMenuClose}
+                      >
+                        {subItem.label}
+                      </MenuItem>
+                    ))}
+                  </Menu>
+                </div>
+              ) : (
+                <NavButton key={item.label} href={item.href}>
+                  {item.label}
+                </NavButton>
+              )
             ))}
           </Box>
           <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
