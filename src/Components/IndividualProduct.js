@@ -65,44 +65,6 @@ const itemData = [
     description: 'A stylish Ceirbon mug that combines tradition with practicality, featuring a unique design that reflects the rich cultural heritage of the region.',
     price: 150040
   },
-  {
-    img: 'https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3',
-    title: 'Ceirbon Pot',
-    description: 'A beautifully handcrafted pot from Ceirbon, featuring traditional designs and vibrant colors, perfect for adding a touch of culture to any space.',
-    price: 250400
-  },
-  {
-    img: 'https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp',
-    title: 'Ceirbon Plate',
-    description: 'This Ceirbon plate showcases intricate patterns and fine craftsmanship, making it an ideal piece for both functional use and decoration.',
-    price: 109040
-
-  },
-  {
-    img: 'https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',
-    title: 'Ceirbon Mug',
-    description: 'A stylish Ceirbon mug that combines tradition with practicality, featuring a unique design that reflects the rich cultural heritage of the region.',
-    price: 150040
-  },
-  {
-    img: 'https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3',
-    title: 'Ceirbon Pot',
-    description: 'A beautifully handcrafted pot from Ceirbon, featuring traditional designs and vibrant colors, perfect for adding a touch of culture to any space.',
-    price: 250400
-  },
-  {
-    img: 'https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp',
-    title: 'Ceirbon Plate',
-    description: 'This Ceirbon plate showcases intricate patterns and fine craftsmanship, making it an ideal piece for both functional use and decoration.',
-    price: 109040
-
-  },
-  {
-    img: 'https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',
-    title: 'Ceirbon Mug',
-    description: 'A stylish Ceirbon mug that combines tradition with practicality, featuring a unique design that reflects the rich cultural heritage of the region.',
-    price: 150040
-  }
 ];
 
 

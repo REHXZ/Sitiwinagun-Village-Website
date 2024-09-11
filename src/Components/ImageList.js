@@ -17,7 +17,7 @@ export default function CardGrid() {
       description: ['Made with ...', 'Something something', 'Something something'],
       imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
     },
-    "Pak_Arkima": {
+    "Pak_Nurari": {
       fullName: "Pak Arkima",
       Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug','Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
       description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],
@@ -29,7 +29,7 @@ export default function CardGrid() {
       description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],
       imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
     },
-    "Pak_Rum": {
+    "Pak_Sariman": {
       fullName: "Pak Rum",
       Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
       description: ['Made with ...', 'Something something', 'Something something'],
@@ -41,7 +41,7 @@ export default function CardGrid() {
       description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],
       imageUrl: ['https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1','https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3','https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp','https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',]
     },
-    "Pak_Kadmiya": {
+    "Pak_Wanwan": {
       fullName: "Pak Kadmiya",  
       Name: ['Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug','Ceirbon Pot', 'Ceirbon Plate', 'Ceirbon Mug'],
       description: ['Made with ...', 'Something something', 'Something something','Made with ...', 'Something something', 'Something something'],

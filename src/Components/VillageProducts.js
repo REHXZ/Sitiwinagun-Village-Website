@@ -5,6 +5,8 @@ import { styled } from '@mui/material/styles';
 import { Typography, useMediaQuery, useTheme, Modal, Fade, Backdrop } from '@mui/material';
 import Button from '@mui/material/Button';
 import DIYKIT from '../Images/NEW4.png';  
+import chicken from '../Images/Chicken.jpg'
+import magnet from '../Images/Magnet.jpg'
 const StyledMasonry = styled(Masonry)(({ theme }) => ({
   margin: 0,
 }));
@@ -51,20 +53,21 @@ const itemData = [
     img: DIYKIT,
     title: 'DIY KIT',
     description: 'A DIY kit people can use at home.',
-    price: 'DIY Kit'
+    price: '100000'
   },
   {
-    img: 'https://images.prismic.io/xometry-marketing/57abb083-8a2c-4a24-9a10-c93815ac1905_ceramic-examples.jpg?auto=format%2Ccompress&rect=100%2C0%2C800%2C800&w=486&h=486&fit=max&fm=webp',
-    title: 'Ceirbon Plate',
-    description: 'This Ceirbon plate showcases intricate patterns and fine craftsmanship, making it an ideal piece for both functional use and decoration.',
-    price: 109040
+    img: chicken,
+    title: 'Ayam Cantik Hand-Painted Chicken Figurine',
+    description: 'This charming hand-painted chicken figurine, with intricate red swirl patterns, reflects the playful artistry of Sitiwinangun Village. Perfect as a decorative piece for your home or garden, it brings a touch of traditional craftsmanship to any space.',
+    price: '150,000'
+
 
   },
   {
-    img: 'https://i0.wp.com/fajarcirebon.com/wp-content/uploads/2020/09/thumbnail-5.jpg?w=1280&ssl=1',
-    title: 'Ceirbon Mug',
-    description: 'A stylish Ceirbon mug that combines tradition with practicality, featuring a unique design that reflects the rich cultural heritage of the region.',
-    price: 150040
+    img: magnet,
+    title: 'Gerabah Magnet Miniature Pot Refrigerator Magnet',
+    description: 'Bring a touch of Sitiwinangun craftsmanship to your kitchen with these beautifully handcrafted miniature clay pot refrigerator magnets. Each magnet showcases intricate patterns and the village’s name, making it a perfect cultural souvenir or unique gift.',
+    price: '30,000'
   },
   {
     img: 'https://miro.medium.com/v2/resize:fit:828/format:webp/0*L7QNmjIOZCn6MeM3',

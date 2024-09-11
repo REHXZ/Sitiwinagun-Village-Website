@@ -5,7 +5,15 @@ import { Typography, Box, Container } from '@mui/material';
 import ImageList from '../Components/ImageList';
 import Stack from '@mui/material/Stack';
 import arkimaImage from '../Images/WhatsApp Image 2024-09-08 at 15.26.54_44ddd897.jpg';
-import ImageMasonry from '../Components/IndividualProduct';  
+import ImageMasonry from '../Components/IndividualProduct'; 
+
+import nurjaji from '../Images/Nurjaji.jpg'
+import utama from '../Images/potter 1.jpg'
+import nurari from '../Images/nurari.jpg'
+import sarimna from '../Images/sariman.jpg'
+import yandi from '../Images/yandi.jpg'
+import wanwan from '../Images/wanwan.jpg'
+
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 `;
@@ -19,32 +27,32 @@ const LocationDetailPage = () => {
     "Pak_Nurjaji": {
       fullName: "Pak Nurjaji",
       description: "An expert wood carver from Bali, Indonesia.",
-      imageUrl: "https://media.istockphoto.com/id/1090026394/id/foto/pemuda-pribumi-ukiran-masker-kayu-di-bali-indonesia.jpg?s=612x612&w=0&k=20&c=DuhZrm27LZcUjqglWE6n2cwWaJxqJRxufwDEg7Mi-7Y="
+      imageUrl: nurjaji
     },
-    "Pak_Arkima": {
-      fullName: "Pak Arkima",
+    "Pak_Nurari": {
+      fullName: "Pak Nurari",
       description: "A summary about Pak Arkima.",
-      imageUrl: arkimaImage
+      imageUrl: nurari
     },
     "Pak_Utama": {
       fullName: "Pak Utama",
       description: "A senior craftsman specializing in Indonesian palm sugar production.",
-      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
+      imageUrl: utama,
     },
-    "Pak_Rum": {
-      fullName: "Pak Rum",
+    "Pak_Sariman": {
+      fullName: "Pak Sarimna",
       description: "A senior craftsman specializing in Indonesian palm sugar production.",
-      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
+      imageUrl: sarimna,
     },
     "Pak_Yandi": {
       fullName: "Pak Yandi",
       description: "A senior craftsman specializing in Indonesian palm sugar production.",
-      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
+      imageUrl: yandi,
     },
-    "Pak_Kadmiya": {
-      fullName: "Pak Kadmiya",
+    "Pak_Wanwan": {
+      fullName: "Pak Wanwan",
       description: "A senior craftsman specializing in Indonesian palm sugar production.",
-      imageUrl: "https://media.istockphoto.com/id/1014987276/id/foto/pengrajin-senior-pembuat-gula-aren-indonesia-tersenyum-di-dapurnya.jpg?s=612x612&w=0&k=20&c=8KaO2Md8TDP4bzxtshYS2rsVLUdnSFiiR5VELJyvieE=",
+      imageUrl: wanwan,
     }
   };
 
