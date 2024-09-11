@@ -244,8 +244,6 @@ function LandingPage() {
             <VirtualTour />
           </div>
         </Container>
-
-        {/* New Testimonial Section */}
         <Container
           sx={{
             display: 'flex',
