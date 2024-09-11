@@ -196,9 +196,15 @@ export default function ImageMasonry() {
                 <Typography variant="h5" pt={1} pb={1} sx={{ fontWeight: 'bold', fontFamily: '"Lora", serif'}}>
                   {selectedItem.price} Rp
                 </Typography>
-                <Button variant="contained" color="success" fullWidth sx={{fontSize:'18px', fontWeight:'bold', fontFamily: '"Lora", serif'}}>
-                  Buy {selectedItem.title}
-                </Button>
+                <Button
+                variant="contained"
+                color="success"
+                fullWidth
+                sx={{ fontSize: '18px', fontWeight: 'bold', fontFamily: '"Lora", serif' }}
+              >
+                Buy {selectedItem.title}
+              </Button>
+
               </>
             )}
           </ModalContent>
