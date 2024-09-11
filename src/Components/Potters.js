@@ -7,14 +7,6 @@ import Typography from '@mui/joy/Typography';
 import Grid from '@mui/joy/Grid';
 import Box from '@mui/joy/Box';
 
-// Import the local image
-import nurjaji from '../Images/Nurjaji.jpg'
-import utama from '../Images/potter 1.jpg'
-import nurari from '../Images/nurari.jpg'
-import sarimna from '../Images/sariman.jpg'
-import yandi from '../Images/yandi.jpg'
-import wanwan from '../Images/wanwan.jpg'
-
 const LocationCard = ({ title, imageUrl }) => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -40,7 +32,7 @@ const LocationCard = ({ title, imageUrl }) => {
       <CardCover>
         <img
           src={imageUrl}
-          srcSet={`${imageUrl}&dpr=2 2x`}
+          srcSet={`${imageUrl} 2x`}
           loading="lazy"
           alt={title}
         />
@@ -62,12 +54,12 @@ const LocationCard = ({ title, imageUrl }) => {
 
 const LocationCardGrid = () => {
   const locations = [
-    { title: "Pak Nurjaji", imageUrl: nurjaji },
-    { title: "Pak Wanwan", imageUrl: wanwan }, // Use the imported image
-    { title: "Pak Utama", imageUrl: utama },
-    { title: "Pak Nurari", imageUrl: nurari },
-    { title: "Pak Yandi", imageUrl: sarimna },
-    { title: "Pak Sariman", imageUrl: yandi },
+    { title: "Pak Nurjaji", imageUrl: require('../Images/Nurjaji.jpg') },
+    { title: "Pak Wanwan", imageUrl: require('../Images/wanwan.jpg') },
+    { title: "Pak Utama", imageUrl: require('../Images/potter 1.jpg') },
+    { title: "Pak Nurari", imageUrl: require('../Images/nurari.jpg') },
+    { title: "Pak Yandi", imageUrl: require('../Images/yandi.jpg') },
+    { title: "Pak Sariman", imageUrl: require('../Images/sariman.jpg') },
   ];
 
   return (
