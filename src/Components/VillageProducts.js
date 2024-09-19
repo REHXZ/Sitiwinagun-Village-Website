@@ -197,13 +197,13 @@ export default function ImageMasonry() {
                   {selectedItem.price} Rp
                 </Typography>
                 <Button
-                variant="contained"
-                color="success"
-                fullWidth
-                sx={{ fontSize: '18px', fontWeight: 'bold', fontFamily: '"Lora", serif' }}
-              >
-                Buy {selectedItem.title}
-              </Button>
+              variant="contained"
+              color="success"
+              fullWidth
+              sx={{ fontSize: '18px', fontWeight: 'bold', fontFamily: '"Lora", serif' }}
+            >
+              Buy {selectedItem.title}
+            </Button>
 
               </>
             )}
